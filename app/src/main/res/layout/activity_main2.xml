@@ -22,7 +22,7 @@
         android:layout_weight="1"
         android:textColor="#5631db"
         android:textSize="32dp"
-        android:text="第一頁傳過來的訊息..." />
+        android:text="第一頁要傳過來的訊息..." />
 
     <EditText
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         android:id="@+id/editText_02_02"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        android:text="回傳第二頁的資料..."
+        android:text="由第二頁傳回來的資料..."
         android:textSize="32dp"
         android:textColor="#b83fd0" />
 </LinearLayout>
