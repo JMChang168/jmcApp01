@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="JMC 測試1張炯明"
+        android:text="JMC 測試1張炯明 林淑芳"
         android:textColor="#eb8d11"
         android:textSize="32dp" />
 </RelativeLayout>
