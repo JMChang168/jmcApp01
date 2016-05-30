@@ -6,11 +6,31 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin">
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="返回"
         android:id="@+id/button_02_01"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_02_01"
+        android:layout_weight="1"
+        android:textColor="#5631db"
+        android:textSize="32dp"
+        android:text="第一頁傳過來的訊息..." />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_02_02"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:text="回傳第二頁的資料..."
+        android:textSize="32dp"
+        android:textColor="#b83fd0" />
 </LinearLayout>

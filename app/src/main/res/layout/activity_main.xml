@@ -7,12 +7,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jmc.jmcapp01.MainActivity">
+    tools:context="com.jmc.jmcapp01.MainActivity"
+    android:orientation="vertical">
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="開啟google"
         android:id="@+id/button_01_01"
+        android:textSize="32dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="到第二頁"
+        android:id="@+id/button_01_02"
+        android:textSize="32dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive from 第二頁"
+        android:id="@+id/textView_01_01"
         android:textSize="32dp" />
 </LinearLayout>
