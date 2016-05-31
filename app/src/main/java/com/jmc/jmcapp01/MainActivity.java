@@ -24,14 +24,14 @@ public class MainActivity extends Activity {
         button_01_01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Toast.makeText(MainActivity.this, "開啟第二頁 !!", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(MainActivity.this, "開啟第二頁 !!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Intent.ACTION_VIEW);
                 intent.setData(Uri.parse("http://www.google.com.tw"));
                 startActivity(intent);
             }
         });
 
-
+        //開啟第二頁
         Button button_01_02 = (Button) findViewById(R.id.button_01_02);
         final EditText editText1=(EditText) findViewById(R.id.editText_01_01);
         final TextView textView=(TextView)findViewById(R.id.textView_01_02);
