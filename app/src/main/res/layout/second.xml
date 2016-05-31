@@ -3,11 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical">
+
+    <!--方法一：使用 include -->
+    <!--<include layout="@layout/title"/>-->
+
+    <!--方法二：使用 自定義控制元件 -->
+    <com.jmc.jmcapp01.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.jmc.jmcapp01.TitleLayout>
 
     <Button
         android:layout_width="fill_parent"
@@ -45,5 +50,4 @@
         android:text="由第二頁傳回來的資料：來自第二頁的資料"
         android:textSize="32dp"
         android:textColor="#b83fd0" />
-
 </LinearLayout>

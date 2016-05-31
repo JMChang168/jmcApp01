@@ -1,24 +1,21 @@
 package com.jmc.jmcapp01;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class FirstActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.first);
 
         Button button_01_01 = (Button) findViewById(R.id.button_01_01);
         button_01_01.setOnClickListener(new View.OnClickListener() {
@@ -33,16 +30,19 @@ public class MainActivity extends Activity {
 
         //開啟第二頁
         Button button_01_02 = (Button) findViewById(R.id.button_01_02);
-        final EditText editText1=(EditText) findViewById(R.id.editText_01_01);
-        final TextView textView=(TextView)findViewById(R.id.textView_01_02);
         button_01_02.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                final EditText editText1=(EditText) findViewById(R.id.editText_01_01);
+                final TextView textView=(TextView)findViewById(R.id.textView_01_02);
                 String data =editText1.getText().toString();
-                Intent intent = new Intent(MainActivity.this, Main2Activity.class);
+
+
+                //傳遞參數給 SecondActivity
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                 intent.putExtra("extra_data", data);
 
-                //要求回傳值
+                //要求回傳值的呼叫
                 startActivityForResult(intent, 1);
             }
         });
