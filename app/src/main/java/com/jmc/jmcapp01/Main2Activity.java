@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Main2Activity extends Activity {
@@ -16,23 +17,24 @@ public class Main2Activity extends Activity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main2);
-        Button btn_02_01= (Button) findViewById(R.id.button_02_01);
-        final TextView textView1=(TextView) findViewById(R.id.editText_02_01);
-        final TextView textView2=(TextView) findViewById(R.id.editText_02_02);
 
+        //第一頁傳過來的訊息
+        final TextView textView=(TextView) findViewById(R.id.textView_02_03);
+        Intent intent=getIntent(); //取得第一頁的 intent
+        String data=intent.getStringExtra("extra_data");
+        Log.d("SecondActivity", data);
+        textView.setText(data);
+
+        //返回按鈕
+        Button btn_02_01= (Button) findViewById(R.id.button_02_01);
+        final EditText editText=(EditText) findViewById(R.id.editText_02_01);
         btn_02_01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=getIntent();
-                String data=intent1.getStringExtra("extra_data");
-                Log.d("SecondActivity", data);
-                textView1.setText(data);
-
-
                 //返回第二頁資料到上一頁
-                Intent intent2=new Intent();
-                intent2.putExtra("data_return",textView2.toString());
-                setResult(RESULT_OK, intent2);
+                Intent intent=new Intent();
+                intent.putExtra("data_return",editText.getText().toString());
+                setResult(RESULT_OK, intent);
                 finish();
             }
         });

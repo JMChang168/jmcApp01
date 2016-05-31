@@ -27,7 +27,30 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Receive from 第二頁"
+        android:text="請輸入要傳給第二頁的資料..."
         android:id="@+id/textView_01_01"
-        android:textSize="32dp" />
+        android:textSize="22dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_01_01"
+        android:text="(請輸入要傳給第二頁的資料...)"
+        android:textColor="#432aec" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="由第二頁返回的資料..."
+        android:id="@+id/textView"
+        android:textSize="22dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="from page 2 data ..."
+        android:id="@+id/textView_01_02"
+        android:textSize="24dp"
+        android:textColor="#e0b012" />
+
 </LinearLayout>

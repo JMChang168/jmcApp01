@@ -15,22 +15,35 @@
         android:text="返回"
         android:id="@+id/button_02_01"/>
 
-    <EditText
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText_02_01"
-        android:layout_weight="1"
-        android:textColor="#5631db"
-        android:textSize="32dp"
-        android:text="第一頁要傳過來的訊息..." />
+        android:text="第一頁傳來"
+        android:id="@+id/textView_02_01"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一頁傳來 ..."
+        android:id="@+id/textView_02_03"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="返回至第一頁"
+        android:id="@+id/textView3"
+        android:textSize="24dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/editText_02_02"
+        android:id="@+id/editText_02_01"
         android:layout_gravity="center_horizontal"
         android:layout_weight="1"
-        android:text="由第二頁傳回來的資料..."
+        android:text="由第二頁傳回來的資料：來自第二頁的資料"
         android:textSize="32dp"
         android:textColor="#b83fd0" />
+
 </LinearLayout>
