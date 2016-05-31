@@ -27,16 +27,26 @@ public class Main2Activity extends Activity {
 
         //返回按鈕
         Button btn_02_01= (Button) findViewById(R.id.button_02_01);
-        final EditText editText=(EditText) findViewById(R.id.editText_02_01);
         btn_02_01.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //返回第二頁資料到上一頁
+                final EditText editText=(EditText) findViewById(R.id.editText_02_01);
                 Intent intent=new Intent();
                 intent.putExtra("data_return",editText.getText().toString());
                 setResult(RESULT_OK, intent);
                 finish();
             }
         });
+    }
+
+    //按系統返回鍵
+    @Override
+    public void onBackPressed() {
+        final EditText editText=(EditText) findViewById(R.id.editText_02_01);
+        Intent intent=new Intent();
+        intent.putExtra("data_return",editText.getText().toString());
+        setResult(RESULT_OK, intent);
+        finish();
     }
 }
