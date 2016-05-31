@@ -28,6 +28,14 @@
         android:id="@+id/button_01_02"
         android:textSize="32dp" />
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="ListView"
+        android:id="@+id/button_ListView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="32dp" />
+
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

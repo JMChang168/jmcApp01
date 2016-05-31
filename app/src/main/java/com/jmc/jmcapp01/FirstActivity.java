@@ -46,7 +46,21 @@ public class FirstActivity extends BaseActivity {
                 startActivityForResult(intent, 1);
             }
         });
+
+        //開啟第三頁
+        Button btnListView=(Button) findViewById(R.id.button_ListView);
+        btnListView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(FirstActivity.this,ThirdActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
+
 
     //處理第二頁的回傳數據
     @Override
