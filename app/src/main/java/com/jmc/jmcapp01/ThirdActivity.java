@@ -21,24 +21,28 @@ public class ThirdActivity extends BaseActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.third);
 
-        initFruits();
-        FruitAdapter adapter=new FruitAdapter(ThirdActivity.this, R.layout.fruit_item, fruitList);
+        //預設的 adapter
+        ArrayAdapter <String> adapter=new ArrayAdapter<String>(
+                ThirdActivity.this, android.R.layout.simple_list_item_1, data);
         ListView listView=(ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
-    }
 
-
-    private void initFruits() {
-        Fruit apple=new Fruit("蘋果", R.drawable.apple_pic);
-        fruitList.add(apple);
-
+//        initFruits();
+//        FruitAdapter adapter=new FruitAdapter(ThirdActivity.this, R.layout.fruit_item, fruitList);
 
     }
 
 
+//    private void initFruits() {
+//        Fruit apple=new Fruit("蘋果", R.drawable.apple_pic);
+//        fruitList.add(apple);
+//
+//
+//    }
 
-//        ArrayAdapter <String> adapter=new ArrayAdapter<String>(
-//                ThirdActivity.this, android.R.layout.simple_list_item_1, data);
+
+
+//
 //
 
     }
