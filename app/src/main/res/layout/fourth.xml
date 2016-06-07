@@ -26,6 +26,6 @@
         android:layout_height="wrap_content"
         android:hint="請輸入文字..."
         android:textSize="24sp"
-        android:textColor="#1390f7" />
+        android:textColor="#80b474" />
 
 </LinearLayout>
