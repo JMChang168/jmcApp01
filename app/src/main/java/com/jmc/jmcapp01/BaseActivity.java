@@ -12,5 +12,4 @@ public class BaseActivity extends Activity {
         super.onCreate(savedInstanceState);
         Log.d("BaseActivity",getClass().getSimpleName());
     }
-
 }

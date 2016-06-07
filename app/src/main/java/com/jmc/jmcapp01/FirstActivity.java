@@ -57,9 +57,18 @@ public class FirstActivity extends BaseActivity {
             }
         });
 
+
+        //開啟第四頁
+        Button button_01_04=(Button) findViewById(R.id.button_01_04);
+        button_01_04.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(FirstActivity.this,FourthActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
-
-
 
 
     //處理第二頁的回傳數據

@@ -2,4 +2,5 @@
     <string name="app_name">jmcApp01</string>
     <string name="btn01_01">按鈕</string>
     <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_main5">Main5Activity</string>
 </resources>
