@@ -23,7 +23,7 @@ public class FourthActivity extends BaseActivity {
         Button button = (Button) findViewById(R.id.button_Save);
         final EditText editText = (EditText) findViewById(R.id.edit);
 
-        //Save 按鈕
+        //執行Save 按鈕
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
