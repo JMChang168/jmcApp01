@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:stretchColumns="1">
 
 
     <!--方法一：使用 include -->
@@ -15,7 +16,45 @@
         android:layout_height="wrap_content">
     </com.jmc.jmcapp01.TitleLayout>
 
-    
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="帳號:"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/account"
+            android:text="輸入您的帳號."
+            android:textSize="18sp" />
+    </TableRow>
 
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="密碼:"
+            android:textSize="18sp" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow>
+        <CheckBox
+            android:id="@+id/remember_pass"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="紀錄密碼."/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="登入"
+            android:textSize="18sp" />
+    </TableRow>
+
+</TableLayout>
