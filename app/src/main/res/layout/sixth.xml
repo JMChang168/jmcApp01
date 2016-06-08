@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--方法一：使用 include -->
+    <!--<include layout="@layout/title"/>-->
+
+    <!--方法二：使用 自定義控制元件 -->
+    <com.jmc.jmcapp01.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.jmc.jmcapp01.TitleLayout>
+
+    
+
+
+</LinearLayout>

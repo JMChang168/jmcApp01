@@ -8,12 +8,15 @@
         <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SecondActivity"></activity>
-        <activity android:name=".ThirdActivity"></activity>
-        <activity android:name=".FourthActivity"></activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".FourthActivity" />
+        <activity android:name=".FifthActivity" />
+        <activity android:name=".SixthActivity"></activity>
     </application>
 
 </manifest>

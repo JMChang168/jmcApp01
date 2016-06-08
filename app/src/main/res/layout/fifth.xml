@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <!--方法一：使用 include -->
     <!--<include layout="@layout/title"/>-->
 
     <!--方法二：使用 自定義控制元件 -->
+
     <com.jmc.jmcapp01.TitleLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -17,30 +17,14 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/button_Save"
-        android:textSize="24sp" />
-
-    <EditText
-        android:id="@+id/edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="請輸入文字..."
-        android:textSize="24sp"
-        android:textColor="#80b474" />
+        android:text="save"
+        android:id="@+id/buttonSave"
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Laoding"
-        android:id="@+id/buttonLoad"
-        android:textSize="24sp" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextLoaded"
-        android:textSize="24sp"
-        android:textColor="#e98383" />
-
+        android:text="Restore"
+        android:id="@+id/buttonRestore"
+        android:textSize="18sp" />
 </LinearLayout>

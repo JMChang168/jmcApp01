@@ -19,14 +19,14 @@
         android:layout_height="wrap_content"
         android:text="開啟google"
         android:id="@+id/button_01_01"
-        android:textSize="32dp" />
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="到第二頁"
         android:id="@+id/button_01_02"
-        android:textSize="32dp" />
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="fill_parent"
@@ -34,7 +34,7 @@
         android:text="ListView"
         android:id="@+id/button_ListView"
         android:layout_gravity="center_horizontal"
-        android:textSize="32dp" />
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="fill_parent"
@@ -42,35 +42,52 @@
         android:text="文件讀取/寫入"
         android:id="@+id/button_01_04"
         android:layout_gravity="center_horizontal"
-        android:textSize="32dp" />
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SharedPreferences"
+        android:id="@+id/buttonSharedPref"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="登入"
+        android:id="@+id/buttonLogin"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="請輸入要傳給第二頁的資料..."
         android:id="@+id/textView_01_01"
-        android:textSize="22dp" />
+        android:textSize="18sp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText_01_01"
         android:text="(請輸入要傳給第二頁的資料...)"
-        android:textColor="#432aec" />
+        android:textColor="#432aec"
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="由第二頁返回的資料..."
         android:id="@+id/textView"
-        android:textSize="22dp" />
+        android:textSize="18sp" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="from page 2 data ..."
         android:id="@+id/textView_01_02"
-        android:textSize="24dp"
+        android:textSize="18sp"
         android:textColor="#e0b012" />
 
 </LinearLayout>

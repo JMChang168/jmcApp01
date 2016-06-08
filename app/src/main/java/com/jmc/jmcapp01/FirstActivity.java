@@ -68,6 +68,29 @@ public class FirstActivity extends BaseActivity {
             }
         });
 
+
+        //開啟第五頁
+        Button buttonSharedPref=(Button) findViewById(R.id.buttonSharedPref);
+        buttonSharedPref.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(FirstActivity.this,FifthActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //開啟登入頁
+        Button buttonLogin=(Button) findViewById(R.id.buttonLogin);
+        buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(FirstActivity.this,SixthActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
 
